@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*static
+relative
+absolut
+fixed*/
+
+header {
+    position:fixed; /*fix elem*/
+    width:100%;
+    z-index:1;
+}
+
+footer {
+    position:fixed;
+    width:100%;
+    /*top
+    bottom
+    left
+    right*/
+    bottom:1px; /*böngésző aljától legyen 1 centire*/
+    left:1px;
+}
+#kerdojel {
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+main {
+    /*position:absolute;az utolso relativehoz tapad*/
+    padding-top:100px;
+}
+nav {
+    position:absolute; /*együtt fog mozogni a mainnel*/
+    top:110px;
+    left:20px;
+}
+#szamol {
+    position:relative;
+    top:5px;
+    right:-200px;
+}
+form {
+    position:relative; /*kell hozzá h a gomb helyzetet tudjuk honnan paddingolni*/
+    
+}
+
+#zar {
+    position:relative; /*00 poziciojába kerül*/
+    top:5px;
+    right:-200px;
+    
+}

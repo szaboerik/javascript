@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Saját név</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="formazas.css" rel="stylesheet" type="text/css"/>
+       
+        <script>
+            /*java script soronként dolgozza fel az adatokat*/
+            //alert("Helló világ!");
+            console.log("konsolra írunk");
+            document.write("Hello világ");
+            document.getElementById("a").value="halihó"; //hivatkozunk az a elemre ID alapján
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <h1>Fix fejléc, a görgetés ellenére sem mozdul el</h1>
+        </header>
+        <main>
+            <nav> 
+                <h2>Oldalsó navigáció</h2>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                </ul>
+            </nav>
+            <article>
+                <section>
+                    <form novalidate>
+                        <fieldset>
+                            <legend>Számológép</legend>
+                            <div>
+                                <label for="a">Kérek egy számot!</label>
+                                <input type="text" id="a" name="a" placeholder="a">
+                            </div>
+                            <div>
+                                <label for="b">Kérek még egy számot!</label>
+                                <input type="text" id="b" name="b" placeholder="b">
+                            </div>
+
+                            <button id="szamol">Számol</button> 
+                            <button id="zar">x</button>
+                        </fieldset>
+
+
+                    </form >
+                </section>
+                <script>
+                console.log("konsolra írunk");
+                document.write("Hello section");
+                document.getElementById("a").value="halihó"; //átírja az a helyett a value mögötti szövegre
+                var valtozo = document.GetElementById("a").value;
+                //azt az elemet akarja megadni értéket a valtozonak
+                var valtozoA = document.GetElementById("a").value;
+                var valtozoB = document.GetElementById("b").value;
+                    document.write("<p>első változó"+valtozoA+"</p>");
+                    document.write("<p>Második változó: "+valtozoB+"</p>");
+                    document.write("<p>A két szám összege: "+valtozoB+"</p>");
+                
+                </script>
+                <section>
+                <script>
+                console.log("konsolra írunk");
+                document.write("Hello section");
+                document.getElementById("a").value="halihó"; //átírja az a helyett a value mögötti szövegr
+                //azt az elemet akarja megadni értéket a valtozonak
+                var valtozoA = document.getElementById("a").value=2;
+                var valtozoB = document.getElementById("b").value=3;
+                    document.write("<p>első változó"+valtozoA+"</p>");
+                    document.write("<p>Második változó: "+valtozoB+"</p>");
+                    var osszeg=Number (valtozoA)+Number(valtozoB);
+                    document.write("<p>A két szám összege: "+osszeg+"</p>");
+                    
+                </script>
+                </section>
+            </article>
+            <footer><p>Fix lábléc</p></footer>
+        </main>
+        <div id="kerdojel">?</div>
+    </body>
+</html>

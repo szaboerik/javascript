@@ -1,0 +1,50 @@
+@charset "utf-8";
+* {box-sizing:border-box;}
+body, main, header, nav, article {
+    margin:0;padding:0;
+}
+header, nav, article, footer { border:1px solid gray;} 
+body {
+    background:lightgray;
+} 
+main {
+    max-width: 600px;
+    background:white;
+    margin:auto;
+    padding:10px;
+}
+header, footer {
+    background:#ccff99;
+    padding:10px;
+    text-align:center;
+}
+
+fieldset {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+legend, div {
+    flex: 0 0 100%;
+}
+div {
+     display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+label {
+    flex:0 0 200px;
+    text-align:right;
+    padding-right: 10px;
+}
+
+#kerdojel {
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    background:crimson;
+    text-align:center;
+    font-weight:bold;
+    font-size:40px;
+        padding:0 1px 0 13px;
+}
