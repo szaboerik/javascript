@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+main, header, footer, nav, article, aside {
+    border:solid aliceblue 3px;
+    padding:50px;
+
+}
+
+
+
+main {
+    display:grid;
+    grid-template-areas:
+        "h h h h h h "
+        "n a a a a as"
+        "f f f f f f ";
+}
+
+
+header {
+    grid-area: h;
+    background:red;
+}
+nav {
+    grid-area: n;
+    background:blue;
+}
+article {
+    text-align:right;
+    display:grid;
+    grid-area: a;
+    background:yellow;
+    grid-template-columns:auto;
+    grid-gap:10px;
+}
+aside {
+    grid-area: as;
+    background:purple;
+    grid-template-columns:auto;
+}
+footer {
+    grid-area: f;
+    background:grey;
+}
+.asd {
+    background:grey;
+}
+.asd2 {
+    background:grey;
+}
+.prioritas{text-align:justify;}
+@media only screen and (max-width: 600px) {
+  main {
+    display:grid;
+    grid-template-areas:
+        "h h"
+        "n n"
+        "a a"
+        "as as"
+        "f f";
+  }
+}
