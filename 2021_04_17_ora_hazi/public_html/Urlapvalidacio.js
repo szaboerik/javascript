@@ -25,7 +25,7 @@ function validalas() {
     if (nevInput.length < 3) {
         hiba = "A név legyen 3 karakternél hosszabb!<br>"; //itt felülírjuk a hiba változót
     }
-    var szuro = /[A-Z]+[a-z]{2,}/; //megadjuk a reguláris kifejezést,l egyen benne kis nagy betű legalább 2
+    var szuro = /[A-Z]/; //megadjuk a reguláris kifejezést,l egyen benne kis nagy betű legalább 2
     if (!szuro.test(nevInput)) {
         hiba += "A név nagybetűvel kezdődjön!<br>"; //+= hozzáfűzés, így mind a 2 hibát kiírja
         ID("nev").style.border = "1px solid red";
